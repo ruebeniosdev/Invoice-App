@@ -21,7 +21,7 @@ Live URL: []()
 - React
 - Typescript
 - Tailwind Css
-
+-  Lucide React
 
 ## 📦 Setup & Run Instructions
 
