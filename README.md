@@ -27,7 +27,7 @@ Live URL: []()
 
 Clone the repository and run the command:
 
-git clone <github-url>
+git clone https://github.com/ruebeniosdev/Invoice-App
 
 Now, run the command:
 `npm install` to install all the dependencies for the application
