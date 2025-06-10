@@ -1,10 +1,11 @@
-import { EmptyState } from "./EmptyState";
+// import { EmptyState } from "./EmptyState";
 import { FilterByStatus } from "./FilterByStatus";
 import { InvoiceBtn } from "./InvoiceBtn";
+import { InvoiceRow } from "./InvoiceRow";
 
 export const Header = () => {
   return (
-    <div className="bg-slate text-white min-h-screen">
+    <div className="bg-slate text-white min-h-screen ">
       <div className="max-w-5xl mx-auto py-12 px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
           {/* Heading */}
@@ -22,10 +23,8 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 flex items-center justify-center px-8 py-6">
-        <div className="flex flex-col items-center">
-          <EmptyState />
-        </div>
+      <div className="max-w-5xl mx-auto h-16">
+        <InvoiceRow />
       </div>
     </div>
   );
