@@ -1,31 +1,41 @@
-// import { EmptyState } from "./EmptyState";
-import { FilterByStatus } from "./FilterByStatus";
-import { InvoiceBtn } from "./InvoiceBtn";
-import { InvoiceRow } from "./InvoiceRow";
+
+import plusIcon from "../assets/icon-plus.svg";
+import { EmptyState } from "./EmptyState";
+import chevron from "../assets/icon-arrow-down.svg";
 
 export const Header = () => {
   return (
-    <div className="bg-slate text-white min-h-screen ">
-      <div className="max-w-5xl mx-auto py-12 px-4">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-          {/* Heading */}
+    <>
+      <section className="w-full h-full">
+        {/* Header Section */}
+        <div className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-3xl font-bold text-white mb-1 md:mb-2">
-              Invoices
-            </h1>
-            <p className="text-slate-400 text-sm">No invoices</p>
+            <h1 className="text-2xl font-bold mb-1">Invoices</h1>
+            <p className="text-muted text-xs text-[var(--color-muted)]">
+              No invoices
+            </p>
           </div>
-
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 w-full sm:w-auto">
-            <FilterByStatus />
-            <InvoiceBtn />
+          {/* Header Buttons */}
+          <div className="flex gap-4">
+            <button className="flex items-center gap-2 text-[var(--color-text)] cursor-pointer">
+              {" "}
+              <span className="text-xs font-bold">Filter by Status</span>
+              <img className="" src={chevron} alt="dropdown" />
+            </button>
+            <button className="flex items-center gap-2 font-bold text-white bg-[#7C5DFA] px-4 py-2 rounded-full hover:bg-[#9277FF] transition">
+              <img
+                className="bg-white p-[11px] rounded-full"
+                src={plusIcon}
+                alt="plus icon"
+              />
+              New Invoice
+            </button>
           </div>
         </div>
-      </div>
-      <div className="max-w-5xl mx-auto h-16">
-        <InvoiceRow />
-      </div>
-    </div>
+        {/* Empty State */}
+        {/* or List of Invoices */}
+        <EmptyState />
+      </section>
+    </>
   );
 };

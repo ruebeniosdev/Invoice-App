@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
-.light-theme {
---color-bg: #f8f8fb;
+:root {
+  --color-bg: #f8f8fb;
   --color-surface: #ffffff;
   --color-text: #0c0e16;
   --color-muted: #888eb0;
@@ -19,9 +20,9 @@
   --color-draft: #373b53;
   --color-draft-bg: #f4f4f5;
   --color-card-text-muted: #858bb2;
-  --color-dropdown: '#1e2139';
+  --color-dropdown: "#1e2139";
   --color-dropdown-bg: #fff;
-  --color-card-border: #7C5DFA;
+  --color-card-border: #7c5dfa;
   --color-checkmark-bg: #dfe3fa;
 }
 
@@ -44,12 +45,21 @@
   --color-card-text-muted: #858bb2;
   --color-dropdown: #fff;
   --color-dropdown-bg: #252945;
-  --color-card-border: #7C5DFA;
-  --color-checkmark-bg: #1E2139;
+  --color-card-border: #7c5dfa;
+  --color-checkmark-bg: #1e2139;
 }
 
 body {
-    background: #141625;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Spartan", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+body.theme-transition {
+  opacity: 0.7;
 }
 
 .no-scrollbar::-webkit-scrollbar {
