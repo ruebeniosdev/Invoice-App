@@ -2,7 +2,7 @@
 
 An invoice app built with React.
 
-Live URL: [https://rad-sfogliatella-bb491d.netlify.app/]()
+Live URL: [https://rad-sfogliatella-bb491d.netlify.app/](https://rad-sfogliatella-bb491d.netlify.app/)
 
 ## 📌 Table of Contents
 
