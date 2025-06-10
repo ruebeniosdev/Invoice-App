@@ -2,7 +2,7 @@
 
 An invoice app built with React.
 
-Live URL: []()
+Live URL: [https://rad-sfogliatella-bb491d.netlify.app/]()
 
 ## 📌 Table of Contents
 
@@ -47,10 +47,9 @@ Once the server is running, open your browser and navigate to http://localhost:5
 
 ### Project Setup
 I began by creating a new React project with vite
-I created a clean, modular folder structure to contain my components,Types,  data and assets. 
+I created a clean, modular folder structure to contain my components, Types,  data and assets. 
 Next, I updated the README.md docs to contain all valuable information such as how to start and run the project.
-Finally, I committed my changes to GitHub 
-<!-- and hosted the project on Netlify -->
+Finally, I committed my changes to GitHub and hosted the project on Netlify 
 
 ### 👤 Author
 Akankobateng Rueben Ansoliwen & Victor Bruce
