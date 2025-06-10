@@ -38,6 +38,8 @@ npm run dev
 Once the server is running, open your browser and navigate to http://localhost:5173/. The application will automatically reload whenever you modify any of the source files.
 
 ### 📸 Screenshots
+![Screenshot 2025-06-10 033456](https://github.com/user-attachments/assets/30d17bf5-6b52-435b-a848-20f036a23275)
+
 ### 📋 Approach
 - Project Setup
 - Application Features
